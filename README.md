@@ -5,3 +5,5 @@
 3. vi README.md
 4. vi index.html
 5. echo hello > file.txt
+6. echo world >> file.txt
+7. git commit -am (to commit all modified content)
