@@ -16,6 +16,7 @@
 14. git checkout main (switched to main branch)
 
 ##Bundle 1 Exercise 2
+
 '''bash
 
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi home.html
