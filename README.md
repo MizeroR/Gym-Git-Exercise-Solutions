@@ -1,5 +1,6 @@
 # Gym-Git-Exercise-Solutions
 ## List of commands used
+## Bundle 1 Exercise 1
 1. mkdir Gym-Git-Exercise-Solutions
 2. cd Gym-Git-Exercise-Solutions
 3. vi README.md
@@ -32,19 +33,7 @@ mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi home.html
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git branch
   dev
 * main
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi home.html
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi about.html
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git stash
-Saved working directory and index state WIP on main: 27400a1 New commands
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi about.html
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi team.html
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi team.html     
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git add team.html
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git stash
-Saved working directory and index state WIP on main: 27400a1 New commands
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi team.html     
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % ls
-README.md	about.html	file.txt	home.html	team.html
+
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git stash list
 stash@{0}: WIP on main: 27400a1 New commands
 stash@{1}: WIP on main: 27400a1 New commands
@@ -87,59 +76,15 @@ Changes not staged for commit:
 	modified:   home.html
 	modified:   team.html
 
-no changes added to commit (use "git add" and/or "git commit -a")
-Dropped stash@{0} (7a7ea555e5851b04a728388f91bf660ed8a621fe)
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git add --all
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git status
-On branch main
-Your branch is up to date with 'origin/main'.
-
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-	modified:   about.html
-	modified:   home.html
-	modified:   team.html
-
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git commit -m "Stashed files modification"
-[main b58682c] Stashed files modification
- 3 files changed, 34 insertions(+)
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git push
-Enumerating objects: 9, done.
-Counting objects: 100% (7/7), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (5/5), done.
-Writing objects: 100% (5/5), 694 bytes | 694.00 KiB/s, done.
-Total 5 (delta 2), reused 0 (delta 0), pack-reused 0
-remote: Resolving deltas: 100% (2/2), done.
-To https://github.com/MizeroR/Gym-Git-Exercise-Solutions.git
-   094bdf1..b58682c  main -> main
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git stash list
+```
+## Bundle 2 Exercise 1
+```bash
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git checkout -b ft/bundle-2
 Switched to a new branch 'ft/bundle-2'
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git status
 On branch ft/bundle-2
 nothing to commit, working tree clean
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi services.html 
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git add services.html
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git status
-On branch ft/bundle-2
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-	new file:   services.html
-
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git commit -m "Service page"
-[ft/bundle-2 5dff588] Service page
- 1 file changed, 11 insertions(+)
- create mode 100644 services.html
-mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git push 
-fatal: The current branch ft/bundle-2 has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin ft/bundle-2
-
-To have this happen automatically for branches without a tracking
-upstream, see 'push.autoSetupRemote' in 'git help config'.
-
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git push --set-upstream origin ft/bundle-
 error: src refspec ft/bundle- does not match any
 error: failed to push some refs to 'https://github.com/MizeroR/Gym-Git-Exercise-Solutions.git'
