@@ -14,3 +14,34 @@
 12. git checkout -b test dev (to create a sub branch)
 13. git branch -d test (to delete branch)
 14. git checkout main (switched to main branch)
+
+##Bundle 1 Exercise 2
+'''bash
+
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi home.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi home.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git add .
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi home.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git stash
+Saved working directory and index state WIP on main: 27400a1 New commands
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi about.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git add about.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi about.html     
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi home.html      
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git branch
+  dev
+* main
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi home.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi about.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git stash
+Saved working directory and index state WIP on main: 27400a1 New commands
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi about.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi team.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi team.html     
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git add team.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git stash
+Saved working directory and index state WIP on main: 27400a1 New commands
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi team.html     
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % ls
+README.md	about.html	file.txt	home.html	team.html
+
