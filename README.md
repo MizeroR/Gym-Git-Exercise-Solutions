@@ -45,4 +45,4 @@ Saved working directory and index state WIP on main: 27400a1 New commands
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi team.html     
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % ls
 README.md	about.html	file.txt	home.html	team.html
-
+'''
