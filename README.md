@@ -15,7 +15,7 @@
 13. git branch -d test (to delete branch)
 14. git checkout main (switched to main branch)
 
-##Bundle 1 Exercise 2
+## Bundle 1 Exercise 2
 
 ```bash
 
