@@ -114,4 +114,48 @@ remote: Resolving deltas: 100% (2/2), done.
 To https://github.com/MizeroR/Gym-Git-Exercise-Solutions.git
    094bdf1..b58682c  main -> main
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git stash list
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git checkout -b ft/bundle-2
+Switched to a new branch 'ft/bundle-2'
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git status
+On branch ft/bundle-2
+nothing to commit, working tree clean
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi services.html 
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git add services.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git status
+On branch ft/bundle-2
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	new file:   services.html
+
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git commit -m "Service page"
+[ft/bundle-2 5dff588] Service page
+ 1 file changed, 11 insertions(+)
+ create mode 100644 services.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git push 
+fatal: The current branch ft/bundle-2 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/bundle-2
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git push --set-upstream origin ft/bundle-
+error: src refspec ft/bundle- does not match any
+error: failed to push some refs to 'https://github.com/MizeroR/Gym-Git-Exercise-Solutions.git'
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git push --set-upstream origin ft/bundle-2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 436 bytes | 218.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote: 
+remote: Create a pull request for 'ft/bundle-2' on GitHub by visiting:
+remote:      https://github.com/MizeroR/Gym-Git-Exercise-Solutions/pull/new/ft/bundle-2
+remote: 
+To https://github.com/MizeroR/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/bundle-2 -> ft/bundle-2
+branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 ```
