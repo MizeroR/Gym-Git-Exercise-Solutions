@@ -155,3 +155,8 @@ mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git revert ce9af667
 [ft/faq-page 22ac245] Revert "New heading in team page" Revert This reverts commit ce9af6672a2c6fc7373717ac896071f0218af6b4.
  1 file changed, 1 deletion(-)
 ```
+### Bundle 3 Exercise 2
+```bash
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git rebase main
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+```
