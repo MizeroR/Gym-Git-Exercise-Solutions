@@ -123,6 +123,9 @@ Fast-forward
  README.md     | 10 ++++++++++
  services.html |  1 +
  2 files changed, 11 insertions(+)
+```
+### Bundle 3 Exercise 1
+```bash
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git branch ft/team-page
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi team.html
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git checkout main
@@ -140,9 +143,6 @@ mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git branch
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git checkout ft/team-page
 M	README.md
 Switched to branch 'ft/team-page'
-git checkout ft/team-page
-M	README.md
-Switched to branch 'ft/team-page'
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git log
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git cherry-pick fff8536f043b19a00da66695bb87cb7442040ea8
 [ft/contact-page ce9af66] New heading in team page
@@ -151,5 +151,7 @@ mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git cherry-pick fff
 [ft/contact-page ce9af66] New heading in team page
  Date: Wed Dec 18 11:56:15 2024 +0200
  1 file changed, 1 insertion(+)
-
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git revert ce9af6672a2c6fc7373717ac896071f0218af6b4
+[ft/faq-page 22ac245] Revert "New heading in team page" Revert This reverts commit ce9af6672a2c6fc7373717ac896071f0218af6b4.
+ 1 file changed, 1 deletion(-)
 ```
