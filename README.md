@@ -104,3 +104,13 @@ To https://github.com/MizeroR/Gym-Git-Exercise-Solutions.git
  * [new branch]      ft/bundle-2 -> ft/bundle-2
 branch 'ft/bundle-2' set up to track 'origin/ft/bundle-2'.
 ```
+### Bundle 2 Exercise 2
+```bash
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi README.md
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi services.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git add services.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git commit -m 'Services'
+[ft/service-redesign ec3e90a] Services
+ 1 file changed, 3 insertions(+)
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions %  git push origin ft/service-redesign
+```
