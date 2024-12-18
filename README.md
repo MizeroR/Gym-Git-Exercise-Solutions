@@ -160,3 +160,38 @@ mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git revert ce9af667
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git rebase main
 Successfully rebased and updated refs/heads/ft/home-page-redesign.
 ```
+### Bundle 4 Exercise 1
+```bash
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git remote add git-copy git@github.com:MizeroR/git-exercises.git
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git remote
+git-copy
+origin
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git push origin 
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git push git-copy
+To https://github.com/MizeroR/git-exercises.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/MizeroR/git-exercises.git'
+hint: Updates were rejected because the remote contains work that you do
+hint: not have locally. This is usually caused by another repository pushing
+hint: to the same ref. You may want to first integrate the remote changes
+hint: (e.g., 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git pull
+Already up to date.
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git pull git-copy
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 872 bytes | 218.00 KiB/s, done.
+From https://github.com/MizeroR/git-exercises
+ * [new branch]      main       -> git-copy/main
+You asked to pull from the remote 'git-copy', but did not specify
+a branch. Because this is not the default configured remote
+for your current branch, you must specify a branch on the command line.
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git push
+Everything up-to-date
+
+```
