@@ -113,4 +113,14 @@ mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git commit -m 'Serv
 [ft/service-redesign ec3e90a] Services
  1 file changed, 3 insertions(+)
 mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions %  git push origin ft/service-redesign
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git checkout ft/service-redesign
+Already on 'ft/service-redesign'
+Your branch is behind 'origin/main' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git merge main
+Updating ec3e90a..ae6b19c
+Fast-forward
+ README.md     | 10 ++++++++++
+ services.html |  1 +
+ 2 files changed, 11 insertions(+)
 ```
