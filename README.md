@@ -123,4 +123,33 @@ Fast-forward
  README.md     | 10 ++++++++++
  services.html |  1 +
  2 files changed, 11 insertions(+)
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git branch ft/team-page
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % vi team.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git checkout main
+M	README.md
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git branch ft/contact-page
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git branch   
+  dev
+  ft/bundle-2
+  ft/contact-page
+  ft/service-redesign
+  ft/team-page
+* main
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git checkout ft/team-page
+M	README.md
+Switched to branch 'ft/team-page'
+git checkout ft/team-page
+M	README.md
+Switched to branch 'ft/team-page'
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git log
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git cherry-pick fff8536f043b19a00da66695bb87cb7442040ea8
+[ft/contact-page ce9af66] New heading in team page
+ Date: Wed Dec 18 11:56:15 2024 +0200
+ 1 file changed, 1 insertion(+)
+[ft/contact-page ce9af66] New heading in team page
+ Date: Wed Dec 18 11:56:15 2024 +0200
+ 1 file changed, 1 insertion(+)
+
 ```
