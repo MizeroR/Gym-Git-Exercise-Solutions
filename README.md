@@ -195,3 +195,38 @@ mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git push
 Everything up-to-date
 
 ```
+### Bundle 4 Exercise 2
+```bash
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git checkout main
+Already on 'main'
+Your branch is up to date with 'origin/main'.
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git merge --squash ft/footer
+Updating 98fc484..03c448f
+Fast-forward
+Squash commit -- not updating HEAD
+ README.md   | 35 +++++++++++++++++++++++++++++++++++
+ footer.html | 11 +++++++++++
+ 2 files changed, 46 insertions(+)
+ create mode 100644 footer.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git commit -m 'footer changes squashing'
+[ft/squashing a9638dd] footer changes squashing
+ 2 files changed, 46 insertions(+)
+ create mode 100644 footer.html
+mizeroreine@Mizeros-MacBook-Air Gym-Git-Exercise-Solutions % git push --set-upstream origin ft/squashing
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.15 KiB | 236.00 KiB/s, done.
+Total 4 (delta 2), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/MizeroR/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/MizeroR/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+```
